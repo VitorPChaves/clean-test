@@ -7,13 +7,13 @@ export default function Testimonials() {
       <div className="max-w-2xl mx-auto space-y-6">
         <blockquote className="bg-blue-50 p-4 rounded shadow">
           <p className="text-gray-800">
-            "Lu Clean has changed my life. Everything is spotless!"
+            &quot;Lu Clean has changed my life. Everything is spotless!&quot;
           </p>
           <footer className="mt-2 text-sm text-blue-600">— Maria J.</footer>
         </blockquote>
         <blockquote className="bg-blue-50 p-4 rounded shadow">
           <p className="text-gray-800">
-            "Professional, reliable and friendly. Highly recommended."
+            &quot;Professional, reliable and friendly. Highly recommended.&quot;
           </p>
           <footer className="mt-2 text-sm text-blue-600">— Carlos D.</footer>
         </blockquote>
