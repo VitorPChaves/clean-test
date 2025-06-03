@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-poppins text-gray-800;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-elegante text-primary;
+}
+
+p {
+  @apply text-base leading-relaxed;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@layer utilities {
+  .animate-zoomOut {
+    animation: zoomOut 4s ease-in-out forwards;
+  }
+}

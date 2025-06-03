@@ -9,8 +9,8 @@ export default function HomePage() {
     <>
       <Hero />
       <FeatureBlock />
-      <Stats />
-      <Testimonials />
+      {/* <Stats />
+      <Testimonials /> */}
       <ServicesGrid />
     </>
   );
