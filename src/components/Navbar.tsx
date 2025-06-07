@@ -27,7 +27,7 @@ export function Navbar() {
         <p className="absolute top-[-14px] text-[14px] text-[#00000090] font-montserrat">
           Contact for an estimate
         </p>
-        <p className="font-lato font-bold text-[22px] text-[#000000] no-underline">
+        <p className="font-montblanc font-bold text-[22px] text-[#000000] no-underline">
           (240) 643-0808
         </p>
       </a>{" "}
