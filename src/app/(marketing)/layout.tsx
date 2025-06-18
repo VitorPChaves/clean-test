@@ -27,7 +27,7 @@ const libre = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Shiny Touch",
+  title: "Care Touch",
   description: "Cleaning Service",
   icons: {
     icon: "/images/icon-dark.jpg",

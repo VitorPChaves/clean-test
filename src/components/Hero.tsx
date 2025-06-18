@@ -4,13 +4,17 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/houses/clean-home-fire2.jpg",
-  "/images/cleaners/aspirator-cleaner.png",
-  "/images/woman-clean.png",
+  "/images/clean-house-2.png",
+  "/images/houses/clean-home-bright.jpg",
+  "/images/clean-house.png",
+  "/images/houses/clean-home-bright2.webp",
 ];
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
+  const smsMessage = encodeURIComponent(
+    "Hello, I visited your website and I would like to know the pricing for your cleaning service."
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full h-[90vh] overflow-hidden">
+    <section className="relative w-full h-[100vh] overflow-hidden z-[-1]">
       <div className="absolute inset-0">
         {images.map((src, index) => (
           <Image
@@ -51,23 +55,27 @@ export default function Hero() {
             height={100}
             className="mb-[10px]"
           />
-          <h1 className="text-4xl md:text-6xl font-semibold text-[#FFFFFF] tracking-[0.025em]">
-            Reliable house <br /> cleaning services
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#FFFFFF] tracking-[0.025em]">
+            Reliable House <br /> Cleaning Services
           </h1>
-          <p className="mt-[10px] text-xl font-thin">
-            Enjoy a fresh and cozy home for you to rest.
+          <p className="mt-[10px] sm:text-lg sm:text-xl font-thin bg-[#00000070] px-6 pt-2 pb-[-2px]">
+            Enjoy a fresh clean home for you to rest.
           </p>
-          <p className="text-xl font-thin">
-            Maryland, Silver Spring quotes open. Get your pricing below.
+          <p className="sm:text-lg sm:text-xl font-thin bg-[#00000070] px-6 pb-2 pt-[-2px]">
+            <b className="flex">Maryland, Silver Spring quotes open.</b> Get
+            pricings below.
           </p>
-          <button className="flex items-center justify-center gap-[10px] mt-6 px-6 py-3 font-semibold rounded-[6px] text-[#FFFFFF] bg-[#00af94]">
+          <a
+            href={`sms:+12406430808?body=${smsMessage}`}
+            className="flex items-center justify-center gap-[10px] mt-6 px-8 py-4 font-semibold rounded-[8px] text-[#FFFFFF] bg-gradient-to-t from-[#00af94] to-transparent"
+          >
             <img
               alt="msg"
               src="/images/icons/message.png"
               className="w-[24px]"
             />
             Get Pricing
-          </button>
+          </a>{" "}
         </div>
       </div>
     </section>
