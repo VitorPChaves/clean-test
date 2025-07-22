@@ -31,3 +31,7 @@ p {
     animation: zoomOut 4s ease-in-out forwards;
   }
 }
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out 0s;
+}
