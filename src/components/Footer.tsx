@@ -39,6 +39,18 @@ export function Footer() {
               (240) 643-0808
             </p>
           </div>
+          <div className="absolute left-0 bottom-[-40px] flex flex-row items-center justify-center gap-[10px]">
+            <img
+              alt="facebook"
+              src="/images/icons/face-icon.png"
+              className="w-[28px] bg-[#00000020] rounded-full p-[3px]"
+            />
+            <img
+              alt="instagram"
+              src="/images/icons/insta-icon.png"
+              className="w-[28px] bg-[#00000020] rounded-full p-[3px]"
+            />
+          </div>
         </a>{" "}
       </div>
       <div className="mt-[40px] mb-[10px] border-[1px] border-[#FFFFFF99] w-full"></div>{" "}

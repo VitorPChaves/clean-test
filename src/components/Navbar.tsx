@@ -12,8 +12,16 @@ export function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF99] px-10 py-6 h-[140px] mb-[-140px] z-[2]">
-        <div className="flex items-end justify-center">
+      <nav className="flex items-center justify-between bg-[#FFFFFF] px-10 py-6 h-[140px] z-[11]">
+        <Link href="/" className="relative flex items-end justify-center">
+          <div className="absolute right-[-84px] top-[-18px] flex items-end justify-start gap-[4px]">
+            <img
+              alt="Liberty Mutual"
+              src="/images/icons/insurance.png"
+              className="w-[22px] mb-[8px]"
+            />
+            <p className="font-bold font-elegante text-[#01006699]">Insured</p>
+          </div>
           <Image
             src="/images/logo.png"
             alt="logo"
@@ -21,14 +29,21 @@ export function Navbar() {
             height={100}
             className="rounded-[10px]"
           />
-        </div>
-        <div className="hidden lg:flex font-bold space-x-6 text-[16px]">
-          <Link href="#hire">Why hire us?</Link>
-          <Link href="#services">Cleaning Services</Link>
+        </Link>
+        <div className="hidden lg:flex font-bold space-x-6 text-[16px">
+          <Link href="#hire" className="smooth-transition hover:scale-[1.08]">
+            Why hire us?
+          </Link>
+          <Link
+            href="#services"
+            className="smooth-transition hover:scale-[1.08]"
+          >
+            Cleaning Services
+          </Link>
           <a
             href={`sms:+12406430808?body=${smsMessage}`}
             onClick={() => setMenuOpen(false)}
-            className="block"
+            className="block smooth-transition hover:scale-[1.08]"
           >
             Contact Us
           </a>
@@ -40,6 +55,18 @@ export function Navbar() {
           <p className="absolute top-[-18px] text-[10px] text-[#00000099] font-semibold font-montserrat">
             CONTACT FOR AN ESTIMATE
           </p>
+          <div className="absolute top-0 bottom-0 m-0 left-[-80px] flex flex-row items-center justify-center gap-[10px]">
+            <img
+              alt="facebook"
+              src="/images/icons/face-icon.png"
+              className="w-[28px] bg-[#00000020] rounded-full p-[3px] smooth-transition hover:scale-[1.2]"
+            />
+            <img
+              alt="instagram"
+              src="/images/icons/insta-icon.png"
+              className="w-[28px] bg-[#00000020] rounded-full p-[3px] smooth-transition hover:scale-[1.2]"
+            />
+          </div>
           <div className="flex flex-row items-center gap-[12px]">
             <img
               alt="msg"
@@ -116,6 +143,18 @@ export function Navbar() {
             href={`sms:+12406430808?body=${smsMessage}`}
             className="relative inline-block bg-gradient-to-r from-[#00af94] to-transparent p-[10px]"
           >
+            <div className="absolute left-0 top-[-60px] flex flex-row items-center justify-center gap-[10px]">
+              <img
+                alt="facebook"
+                src="/images/icons/face-icon.png"
+                className="w-[28px] bg-[#00000020] rounded-full p-[3px]"
+              />
+              <img
+                alt="instagram"
+                src="/images/icons/insta-icon.png"
+                className="w-[28px] bg-[#00000020] rounded-full p-[3px]"
+              />
+            </div>
             <p className="absolute top-[-18px] text-[12px] text-[#00000099] font-semibold font-montserrat">
               CONTACT FOR AN ESTIMATE
             </p>
