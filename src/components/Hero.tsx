@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
 
         {/* Overlay */}
-        <div className="relative z-20 flex items-center justify-center h-full bg-black/40 px-4">
+        <div className="mt-[40px] relative z-20 flex items-center justify-center h-full bg-black/40 px-4">
           <div className="flex flex-col items-center justify-center text-center text-white max-w-3xl">
             <Image
               src="/images/logo-transparent.png"
@@ -67,16 +67,20 @@ export default function Hero() {
               <b>Maryland, Silver Spring quotes open.</b>
               <br /> Get pricings below.
             </p>
+            <a
+              href={`sms:+12406430808?body=${smsMessage}`}
+              className="flex items-center justify-center gap-[10px] w-[200px] mt-6 px-8 py-4 font-semibold rounded-[8px] text-[#FFFFFF] bg-gradient-to-t from-[#00af94] to-transparent z-[10] smooth-transition hover:scale-[1.08]"
+            >
+              <img
+                alt="msg"
+                src="/images/icons/message.png"
+                className="w-[24px]"
+              />
+              Get Pricing
+            </a>{" "}
           </div>
         </div>
       </section>
-      <a
-        href={`sms:+12406430808?body=${smsMessage}`}
-        className="absolute bottom-[130px] left-0 right-0 mx-auto flex items-center justify-center gap-[10px] w-[200px] mt-6 px-8 py-4 font-semibold rounded-[8px] text-[#FFFFFF] bg-gradient-to-t from-[#00af94] to-transparent z-[10] smooth-transition hover:scale-[1.08]"
-      >
-        <img alt="msg" src="/images/icons/message.png" className="w-[24px]" />
-        Get Pricing
-      </a>{" "}
     </div>
   );
 }
